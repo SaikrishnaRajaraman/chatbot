@@ -158,9 +158,10 @@ h1{
     bottom: 5%;left:25%;
     margin-right: auto;
     background-color: white;
-    -webkit-box-shadow: -1px 6px 34px 3px rgba(0,0,0,0.4);
-    -moz-box-shadow: -1px 6px 34px 3px rgba(0,0,0,0.4); 
-    box-shadow: -1px 6px 34px 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: inset -1px 6px 34px 3px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset -1px 6px 34px 3px rgba(0,0,0,0.4); 
+    box-shadow: inset -1px 6px 34px 3px rgba(0,0,0,0.4);
+    overflow-y: scroll;
  
 }
 

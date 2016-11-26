@@ -14,7 +14,7 @@
         if (event.which == 13) {
           event.preventDefault();
              var u=$speechInput.val();
-       $("#usr").addClass("is-act").find(".usrp").html(u);
+             $("#usr").addClass("is-act").find(".usrp").html(u);
           send();
         }
       });
@@ -71,7 +71,13 @@
       send();
     }
     function updateRec() {
-      $recBtn.text(recognition ? "Stop" : "Speak");
+        if(recognition){
+             $recBtn.text('' );
+             $recBtn.append('<i class="material-icons md-48">mic off</i>');
+        }else
+            {
+                $recBtn.text('' );
+                $recBtn.append('<i class="material-icons md-48">mic</i>');}
     }
     function send() {
       var text = $speechInput.val();
